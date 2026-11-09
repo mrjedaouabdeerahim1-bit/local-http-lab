@@ -1,0 +1,14 @@
+local HTTP Lab - test Resultes 
+  
+ 1. Server running , existing page : 
+    Request : GET /index.html 
+    Result : HTTP 200 OK 
+    Meaning : The server returned the page . 
+ 2. server runing, messing page 
+    Request : GET /missing.html 
+    Result : HTTP 404 File not found 
+    Meaning : The server responded , but the page not exist 
+ 3. server : stopped : 
+    Requist : GET /index.html
+    result : curl error (7) - Failed to connect 
+    Mening : The client could not connect to the server. 
